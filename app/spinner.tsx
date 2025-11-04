@@ -14,7 +14,7 @@ export default function BallSpinner() {
             style={{
               top: "50%",
               left: "50%",
-              transformOrigin: "center -16px",
+              transformOrigin: "center -10px",
             }}
             animate={{ rotate: 360 }}
             transition={{  
