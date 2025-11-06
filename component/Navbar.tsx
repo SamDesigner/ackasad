@@ -15,7 +15,7 @@ const Navbar = () => {
             <Link href="/contact">Contact</Link>
                 <div>
             {/* <button  className='bg-black py-2 px-5 text-white '>Contact</button> */}
-            <Button text="Contact"/>
+            <Button type='primary' text="Contact"/>
         </div>
         </div>
     
