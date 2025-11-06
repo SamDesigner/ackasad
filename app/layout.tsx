@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Kalnia  } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
+const kalnia = Kalnia({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -26,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${kalnia.className} antialiased`}
       >
         {children}
       </body>
