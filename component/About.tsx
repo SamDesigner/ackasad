@@ -6,13 +6,13 @@ import ServiceText from "./ServiceText";
 const About = () => {
   return (
     <div className="bg-darkGradient pt-15">
-      <div className="bg-gray-100 py-[100px] ounded-tr-[80px] rounded-tl-[80px]">
+      <div className="bg-gray-100 py-[100px]  rounded-tl-[80px]">
         <div className="gap-5 flex px-5 max-w-7xl mx-auto">
           <div className="flex-1 flex flex-col gap-[50px]">
             <SectionTitle title="Who we are" />
             <div className="flex flex-col gap-[30px]">
               <h2 className="text-[40px]">About Us</h2>
-              <p className="font-sans text-justify">
+              <p className="font-sans text-justify text-gray-500">
                 At Ackasad, we are a globally connected enterprise specializing
                 in import and export operations across Turkey, South America,
                 Africa, and Europe. Our business activities span a wide range of

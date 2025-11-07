@@ -4,7 +4,7 @@ import Button from './global/Button'
 const Navbar = () => {
   return (
 
-    <div className='flex justify-between items-center px-5 py-3 font-sans'> 
+    <div className='flex fixed bg-white w-full h-[15vh] z-1000 justify-between items-center px-5 font-sans'> 
         <div>
             Logo
         </div>
