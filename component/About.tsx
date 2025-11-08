@@ -1,45 +1,49 @@
-import Image from "next/image";
-import SectionTitle from "./global/SectionTitle";
-import Button from "./global/Button";
-import turnKey from "../public/images/turnkeyProject.jpg";
+import Learnmore from "./global/Learnmore";
+
 import ServiceText from "./ServiceText";
 const About = () => {
   return (
-    <div className="bg-darkGradient pt-15">
-      <div className="bg-gray-100 py-[100px]  rounded-tl-[80px]">
+    // bg-goldBackground
+    <div className=" pt-15 obsession_bg">
+      <div className=" py-[100px]  ">
         <div className="gap-5 flex px-5 max-w-7xl mx-auto">
           <div className="flex-1 flex flex-col gap-[50px]">
-            <SectionTitle title="Who we are" />
-            <div className="flex flex-col gap-[30px]">
-              <h2 className="text-[40px]">About Us</h2>
-              <p className="font-sans text-justify text-gray-500">
-                At Ackasad, we are a globally connected enterprise specializing
-                in import and export operations across Turkey, South America,
-                Africa, and Europe. Our business activities span a wide range of
-                sectors, all driven by our commitment to fostering international
-                partnerships and sustainable growth. In Africa, we play a
-                pivotal role in facilitating the acquisition of investment funds
-                for major state and private sector projects, working hand in
-                hand with reputable global funding providers.
-              </p>
-              <Button text="Learn More" />
+         
+
+            <div className="text-center">
+              <h2 className="text-[12px] text-gray-600 font-bold font-mono">Who we are</h2>
+              <h1 className="text-[40px]  ">
+                Connecting Continents Through Trade and <br />
+                Investment
+              </h1>
             </div>
-          </div>
-          <div className="flex-1">
-            <div className="relative flex justify-center">
-                {/* Note Need to Add stat card on Image */}
-              <Image
-                className="w-[500px] h-[450px] object-cover rounded-3xl"
-                src={turnKey}
-                alt="Engineers at work"
-              />
+            <div className="about_bg rounded-xl h-screen p-[30px]">
+              <div className="bg-primary  w-[400px] p-[30px] shadow-lg font-sans flex flex-col gap-5">
+                <div className=" border-primary border-b-2 w-fit ">
+                  <h2 className="text-[22px] font-600 font-mono ">About us</h2>
+                </div>
+                <p className="font-sans text-justify text-black  ">
+                  At Ackasad, we are a globally connected enterprise
+                  specializing in import and export operations across Turkey,
+                  South America, Africa, and Europe. Our business activities
+                  span a wide range of sectors, all driven by our commitment to
+                  fostering international partnerships and sustainable growth.
+                  {/* 
+                  In Africa, we play a pivotal role in facilitating the
+                  acquisition of investment funds for major state and private
+                  sector projects, working hand in hand with reputable global
+                  funding providers. */}
+                </p>
+                {/* <Button text="Learn More" /> */}
+                    <Learnmore />
+              </div>
             </div>
           </div>
         </div>
         <ServiceText />
       </div>
     </div>
-  );    
+  );
 };
 
 export default About;

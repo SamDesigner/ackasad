@@ -2,17 +2,19 @@
 "use client";
 import Navbar from "@/component/Navbar";
 import Showcase from "@/component/Showcase";
+import LogisticsService from '@/component/LogisticsService'
 import About from "@/component/About";
-import Projects from "@/component/Projects";
+import InvestmentService from "@/component/InvestmentService";
 import Contact from "@/component/Contact";
 import Footer from "@/component/Footer";
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Showcase />
       <About />
-      <Projects />
+      <LogisticsService />
+      <InvestmentService />
       <Contact />
       <Footer />
     </div>

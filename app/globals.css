@@ -5,8 +5,11 @@
   --foreground: #171717;
 }
 @theme{
-  --color-primary:#d2a96a;
-  --color-darkGradient:#BB925A
+  /* --color-primary:#d2a96a; */
+  --color-primary:#E5BD78;
+  --color-darkGradient:#BB925A;
+  --color-goldBackground: #F8EED3;
+ 
 }
 @theme inline {
   --color-background: var(--background);
@@ -24,7 +27,31 @@
 }
 
 .gradient_bg{
-  background: linear-gradient(to bottom,#E5BD78, #BB925A);
+  background: linear-gradient(to bottom,#E5BD78, #c9ac85);
+}
+.showcase_bg{
+  background:linear-gradient(rgba(0,0,0,0.3) , rgba(0,0,0,0.5)) ,url('../public/images/showcasee.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.obsession_bg{
+  background: linear-gradient(to bottom,#F8EED3, #f9f7f2 );
+
+}
+.about_bg{
+  background-image: url('../public/images/turnkeyProject.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.charcoal_black{
+  background:#303030
+}
+.faint_gold{
+  color:#e5bd78d2
+} 
+.grain_bg{
+  background: url("../public/images/grain.jpg")
 }
 /* body {
   background: var(--background);
