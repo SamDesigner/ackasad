@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
 // fixed bg-white 
     <div className='flex w-full h-[85px] z-1000 justify-between items-center px-5 font-sans'> 
-        <div className='h-[40px] w-15 '>
+        <div className='h-10 w-15 '>
             <Image className='h-full' src={Logo} alt='Company Logo' />
         </div>
         <div className='flex   justify-center items-center gap-10 text-white'>

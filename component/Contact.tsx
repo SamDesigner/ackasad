@@ -1,13 +1,19 @@
 import React from "react";
-import Button from "./global/Button";
+import TextButton from "./global/TextButton";
 const Contact = () => {
   return (
-    <div className="h-[60vh] flex flex-col items-center gap-5 justify-center">
-      <h1 className="text-[40px] font-bold"> Get in Touch</h1>
-      <p className="w-[500px] text-center">
-        Whether you’re seeking partnership or project collaboration, Ackasad is ready to connect. Reach out to our team
-      </p>
-      <Button type="primary" text="Contact Us" />
+    <div className=" relative contact_bg h-[70vh] ">
+      <div className="max-w-7xl mx-auto px-5 flex flex-col items-start justify-center h-full ">
+        <div className="bg-primary w-[400px] h-[200px] p-4 flex flex-col gap-3">
+          <h1 className="text-[20px] font-kalnia">Contact</h1>
+          <p>
+            Ready to start your next project? Contact us today and let’s make it
+            happen.
+          </p>
+          {/* <p className="font-bold font-sans cursor-pointer">⸺ Get in touch</p> */}
+          <TextButton text='Get in touch' />
+        </div>
+      </div>
     </div>
   );
 };

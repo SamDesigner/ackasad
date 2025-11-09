@@ -5,7 +5,7 @@ import Image from "next/image";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="bg-black">
+    <div className="charcoal_black">
       <div className=" px-5 py-[50px] max-w-7xl mx-auto">
         <div className="flex justify-between items-center">
           <div>
@@ -15,7 +15,7 @@ const Footer = () => {
               alt="Company Logo"
             />
           </div>
-          <div className="text-primary font-sans flex gap-10">
+          <div className="text-white font-sans flex gap-10">
             <Link href="/">Home</Link>
             <Link href="/about">About Us</Link>
             <Link href="/services">Services</Link>
@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
 
         </div>
-        <div className="text-primary font-sans border-t mt-[30px] py-5 text-center">Copyright &copy; {currentYear} Ackasad, All rights reserved.</div>
+        <div className="text-white font-sans border-t mt-[30px] py-5 text-center">Copyright &copy; {currentYear} Ackasad, All rights reserved.</div>
 
         {/* <div>Copyright &copy; {currentYear} Ackasad, All rights reserved.</div> */}
       </div>

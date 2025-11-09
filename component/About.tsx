@@ -1,6 +1,5 @@
-import Learnmore from "./global/Learnmore";
-
 import ServiceText from "./ServiceText";
+import TextButton from "./global/TextButton";
 const About = () => {
   return (
     // bg-goldBackground
@@ -8,10 +7,10 @@ const About = () => {
       <div className=" py-[100px]  ">
         <div className="gap-5 flex px-5 max-w-7xl mx-auto">
           <div className="flex-1 flex flex-col gap-[50px]">
-         
-
             <div className="text-center">
-              <h2 className="text-[12px] text-gray-600 font-bold font-mono">Who we are</h2>
+              <h2 className="text-[12px] text-gray-600 font-bold font-mono">
+                Who we are
+              </h2>
               <h1 className="text-[40px]  ">
                 Connecting Continents Through Trade and <br />
                 Investment
@@ -35,7 +34,7 @@ const About = () => {
                   funding providers. */}
                 </p>
                 {/* <Button text="Learn More" /> */}
-                    <Learnmore />
+                <TextButton />
               </div>
             </div>
           </div>

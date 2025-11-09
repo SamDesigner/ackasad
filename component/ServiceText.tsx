@@ -1,11 +1,7 @@
-// import Truck from "../publick"
-import Truck from "../public/images/truck.png";
-import handshake from "../public/images/handshake.png";
-import Helmet from "../public/images/Helmet.png";
+
 import Image from "next/image";
 import SampleImg from "../public/images/showcase.jpg";
-import Link from "next/link";
-import Learnmore from "./global/Learnmore";
+import TextButton from "./global/TextButton";
 const services = [
   {
     id: 1,
@@ -64,7 +60,8 @@ const ServiceText = () => {
               <h3 className="text-[20px] font-600 font-sans ">{service.title}</h3>
               <p className="font-sans text-gray-500">{service.description}</p>
               <div className="flex justify-end">
-                <Learnmore />
+                {/* <Learnmore /> */}
+                <TextButton />
               </div>
             </div>
           </div>

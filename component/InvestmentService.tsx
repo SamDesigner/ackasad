@@ -4,7 +4,7 @@ import {
   FaProjectDiagram,
   FaMoneyBillWave,
 } from "react-icons/fa";
-import Africa from '@/public/images/africa.png'
+import PalmTree from '@/public/images/palmTree.png'
 import Image from 'next/image'
 const africaInvestmentFeatures = [
   {
@@ -38,7 +38,11 @@ const africaInvestmentFeatures = [
 ];
 const Projects = () => {
   return (
-    <div className="charcoal_black  py-[100px]">
+    <div className="charcoal_black  py-[150px] relative">
+         <div className="absolute left-15 top-0 rotate-180 right-2 ">
+          <Image className="h-[200px] w-[200px] " src={PalmTree} alt="Africa Picture" />
+ 
+        </div>
       <div className="max-w-7xl mx-auto px-5 flex flex-col gap-[100px]">
         <div className="flex flex-col gap-5">
           <h2 className="text-[40px] text-white">
@@ -52,15 +56,15 @@ const Projects = () => {
             <div className="flex-1 border-b border-gray-300 ml-3"></div>
           </div>
         </div>
-        <div>
-          <Image src={Africa} alt="Africa Picture" />
+        <div className="absolute left-15 bottom-0">
+          <Image className="h-[100px] w-[100px] " src={PalmTree} alt="Africa Picture" />
  
         </div>
         <div className="grid grid-cols-4 divide-x ">
           {africaInvestmentFeatures.map((data) => (
             <div key={data.id} className="text-white flex flex-col items-start gap-2.5  justify-center p-4">
               <div>
-                <data.icon className="text-white text-[50px]" />
+                <data.icon className="text-primary text-[50px]" />
               </div>
               <h2 className="text-[18px]">{data.title}</h2>
               <p className="text-[16px] font-sans">{data.description}</p>
