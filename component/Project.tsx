@@ -1,11 +1,11 @@
-import ProjectImg from 
+
 
 const Project = () => {
   return (
     <div>
         <div className="flex-1">
 
-        </div>
+        </div>uhu
         <div className="flex-1">
 
         </div>
