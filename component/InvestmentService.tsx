@@ -4,7 +4,8 @@ import {
   FaProjectDiagram,
   FaMoneyBillWave,
 } from "react-icons/fa";
-import Africa from ''
+import Africa from '@/public/images/africa.png'
+import Image from 'next/image'
 const africaInvestmentFeatures = [
   {
     id: 1,
@@ -50,6 +51,10 @@ const Projects = () => {
             </p>
             <div className="flex-1 border-b border-gray-300 ml-3"></div>
           </div>
+        </div>
+        <div>
+          <Image src={Africa} alt="Africa Picture" />
+ 
         </div>
         <div className="grid grid-cols-4 divide-x ">
           {africaInvestmentFeatures.map((data) => (
